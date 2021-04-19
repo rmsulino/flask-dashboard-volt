@@ -35,4 +35,4 @@ if DEBUG:
     app.logger.info('DBMS        = ' + app_config.SQLALCHEMY_DATABASE_URI )
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True, threaded=True)
+    app.run(host="0.0.0.0", port=5000, debug=True, threaded=True, ssl_context=('/etc/letsencrypt/live/www.fitnesstools.com.br/fullchain.pem', '/etc/letsencrypt/live/www.fitnesstools.com.br/privkey.pem'))
