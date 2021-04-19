@@ -17,14 +17,14 @@
                             <div class="text-center text-md-center mb-4 mt-md-0">
                                 <h1 class="mb-0 h3">
                                     <a target="_blank"
-                                       href="https://appseed.us/admin-dashboards/flask-dashboard-volt">Flask Volt</a> - Sign UP
+                                       href="https://appseed.us/admin-dashboards/flask-dashboard-volt">Fitness Tools</a> - Acesso
                                 </h1>
                                 <br />
                                 <p>
                                     {% if msg %}
                                         {{ msg | safe }}
                                     {% else %}
-                                        Add your credentials
+                                        Entre com suas credenciais
                                     {% endif %}                                     
                                 </p>                                 
                             </div>
@@ -35,20 +35,20 @@
 
                                 <!-- Form -->
                                 <div class="form-group mb-4">
-                                    <label for="email">Username</label>
+                                    <label for="email">Usuário</label>
                                     <div class="input-group">
                                         <span class="input-group-text" id="basic-addon1"><span class="fas fa-user-circle"></span></span>
-                                        {{ form.username(placeholder="Username", class="form-control") }}
+                                        {{ form.username(placeholder="Usuário", class="form-control") }}
                                     </div>  
                                 </div>
                                 <!-- End of Form -->
                                 <div class="form-group">
                                     <!-- Form -->
                                     <div class="form-group mb-4">
-                                        <label for="password">Your Password</label>
+                                        <label for="password">Senha</label>
                                         <div class="input-group">
                                             <span class="input-group-text" id="basic-addon2"><span class="fas fa-unlock-alt"></span></span>
-                                            {{ form.password(placeholder="Password", class="form-control", type="password") }}
+                                            {{ form.password(placeholder="Senha", class="form-control", type="password") }}
                                         </div>  
                                     </div>
                                     <!-- End of Form -->
@@ -56,23 +56,22 @@
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" id="remember">
                                             <label class="form-check-label mb-0" for="remember">
-                                              Remember me
+                                              Lembrar
                                             </label>
                                         </div>
                                         <div class="form-check">
-                                            <a href="{{ url_for('base_blueprint.register') }}" class="small text-right">Register</a>
+                                            <a href="{{ url_for('base_blueprint.register') }}" class="small text-right">Cadastrar</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="d-grid">
-                                    <button type="submit" name="login" class="btn btn-dark">Sign in</button>
+                                    <button type="submit" name="login" class="btn btn-dark">Entrar</button>
                                 </div>
                             </form>
 
                             <div class="d-flex justify-content-center align-items-center mt-4">
                                 <span class="font-weight-normal">
-                                    &copy; <a  href="https://themesberg.com" target="_blank">Themesberg</a> 
-                                    - coded by <a target="_blank" href="https://appseed.us">AppSeed</a>
+                                    &copy; 2021 <a  href="https://themesberg.com" target="_blank">Fitness Tools</a>
                                 </span>
                             </div>
 
